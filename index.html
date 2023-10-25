@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-cinema</title>
+    <link rel="stylesheet" href="./movie.css">
+</head>
+<body>
+    
+    
+    <section>
+        <div class="main">
+            <label class="checkbox style-e">
+                <input type="checkbox"  onchange="changeTheme(this.checked)" class="checkBox" />
+                <div class="checkbox__checkmark"></div>
+                <p class="checkbox__body">Dark mode</p>
+              </label>
+              
+            <div class="type">
+                <h1>E-cinema</h1>
+                <div class="secondType">
+                    <input type="search" placeholder="Name of movie" id="movieInput">
+                    <button id="searchButton">Search</button>
+                    <input type="checkbox" id="add-to-favorites" content="Избранное">
+                    <div id="movieInfo"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <h2>Favorite list </h2><button onclick="clearFavBtn()">Clear</button>
+        </div>
+        <div class="favorities">
+            <!-- <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt=""> -->
+        </div>
+    
+    </section>
+
+
+
+    <script src="./movie.js"></script>
+</body>
+</html>

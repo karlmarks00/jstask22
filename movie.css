@@ -1,0 +1,150 @@
+section {
+    padding: 80px 80px;
+   
+}
+.checkbox.style-e {
+    display: inline-block;
+    position: relative;
+    padding-left: 50px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .checkbox.style-e input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkbox.style-e input:checked ~ .checkbox__checkmark {
+    background-color: #f7cb15;
+  }
+  .checkbox.style-e input:checked ~ .checkbox__checkmark:after {
+    left: 21px;
+  }
+  .checkbox.style-e:hover input ~ .checkbox__checkmark {
+    background-color: #eee;
+  }
+  .checkbox.style-e:hover input:checked ~ .checkbox__checkmark {
+    background-color: #f7cb15;
+  }
+  .checkbox.style-e .checkbox__checkmark {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    height: 22px;
+    width: 40px;
+    background-color: #eee;
+    transition: background-color 0.25s ease;
+    border-radius: 11px;
+  }
+  .checkbox.style-e .checkbox__checkmark:after {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: left 0.25s ease;
+  }
+  .checkbox.style-e .checkbox__body {
+    line-height: 1.4;
+    font-size: 16px;
+    transition: color 0.25s ease;
+  }
+  
+:root {
+    --var-bgcolor: #f1eeee;
+    --var-fontcolor: #000;
+  }
+  
+  [dark] {
+    --var-bgcolor: #333;
+    --var-fontcolor: #eee;
+  }
+  
+  body {
+    background-color: var(--var-bgcolor);
+    color: var(--var-fontcolor);
+  }
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.type {
+    margin-left: 80px;
+}
+.secondType {
+    margin-bottom: 60px;
+    /* display: flex;
+    flex-wrap: wrap; */
+    -webkit-text-stroke-width: thin;
+}
+h1 {
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    --var-bgcolor: #f1eeee;
+    --var-fontcolor: #000;
+    [dark] {
+        --var-bgcolor: #333;
+        --var-fontcolor: #eee;}
+}
+input {
+    background-color: darkgray;
+}
+#searchMovie {
+    padding: 10px 200px 10px 10px;
+    font-size:16px;
+    font-family: Tahoma;
+}
+#movieInfo {
+    margin-top: 20px;
+    --var-bgcolor: #f1eeee;
+    --var-fontcolor: #000;
+    [dark] {
+        --var-bgcolor: #333;
+        --var-fontcolor: #eee;}
+}
+h2 {
+    --var-bgcolor: #fff;
+    --var-fontcolor: #000;
+    [dark] {
+        --var-bgcolor: #333;
+        --var-fontcolor: #eee;}
+}
+label{
+    position: relative;
+}
+.favoriteChbox{
+    padding: 5px;
+    fill: #000;
+    position: absolute;
+    left: 0;
+    top: 0; 
+    width: 25px;
+}
+p{
+    transition: all .3s;
+    text-decoration: none;
+    --var-bgcolor: #fff;
+    --var-fontcolor: #000;
+    [dark] {
+        --var-bgcolor: #333;
+        --var-fontcolor: #eee;}
+}
+p:hover{
+    color: #4CAF50;
+
+}
